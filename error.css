@@ -1,0 +1,73 @@
+/* Full page layout */
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #e6ecf3);
+  text-align: center;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Error container */
+.error-container {
+  max-width: 600px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Large 404 text */
+.error-container h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #ff4b5c;
+  margin: 0;
+  animation: pulse 2s infinite;
+}
+
+/* Title */
+.error-container h2 {
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #222;
+}
+
+/* Message */
+.error-container p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Button */
+.back-home {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff4b5c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.back-home:hover {
+  background: #e63946;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
