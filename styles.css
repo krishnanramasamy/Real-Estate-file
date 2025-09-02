@@ -15,7 +15,6 @@ span{
   font-weight: bold;
 }
 
-
 .hamburger{
   display: none;
 }
@@ -28,7 +27,7 @@ span{
   background-color: rgb(47, 101, 87);
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  gap: 120px;
   margin-top: 20px;
 
   position: sticky;
@@ -58,7 +57,7 @@ span{
 .navLinks{
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  gap: 100px;
 }
 
 .linkLeft{
@@ -105,16 +104,18 @@ span{
   padding: 6px 15px;
   border: none;
   background-color: #ffcc00;
-  color: white;
-  border-radius: 5px;
+  color:black;
+  /* border-radius: 5px; */
   cursor: pointer;
   font-weight: bold;
   height: 40px;
-  width: 100px;
+  width: 130px;
+  border-bottom-right-radius: 40px;
 }
 
 .linkRight button:hover {
-  background-color: #fac800;
+  background-color:rgb(2, 49, 39);
+  color: white;
 }
 
 /* Hamburger Button */
@@ -124,6 +125,7 @@ span{
   background: none;
   border: none;
   cursor: pointer;
+  color: white;
 }
 
 /* Mobile Styles */
@@ -160,6 +162,10 @@ span{
     flex-direction: column;
     gap: 20px;
   }
+
+  .linkLeft a:hover{
+    color: #ffcc00;
+  }
   .linkRight{
     display: flex;
     flex-direction: column;
@@ -176,15 +182,18 @@ span{
     width: 70%;
   }
 
+  .linkRight button:hover {
+  background-color:rgb(2, 51, 40);
+  color: white;
+  }
+
   .linkRight button {
-    width: 20%;
+    width: 27%;
   }
 
   .logo{
     margin-left: 140px;
   }
-  
-  
 }
 
 
@@ -1266,15 +1275,18 @@ h1 span::after {
   color:black;
   font-weight: 600;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-bottom-right-radius: 250px;
 }
 
 .contact-form button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background-color:rgb(2, 45, 36);
+  color: white;
 }
 
 /* ===== Responsive Styling ===== */
